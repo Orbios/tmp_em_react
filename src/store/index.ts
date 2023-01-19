@@ -1,4 +1,5 @@
 import {configureStore, ThunkAction, Action} from '@reduxjs/toolkit';
+
 import categoryReducer from 'reducers/categorySlice';
 import commonReducer from 'reducers/commonSlice';
 import recordReducer from 'reducers/recordSlice';

@@ -20,10 +20,10 @@ export const alert = styled.div`
     `}
 
     ${props =>
-    props.isError &&
-    css`
-      color: ${colors.red_main};
-      background-color: ${colors.red_light};
-      border-color: ${colors.red_lighter};
-    `}
+      props.isError &&
+      css`
+        color: ${colors.red_main};
+        background-color: ${colors.red_light};
+        border-color: ${colors.red_lighter};
+      `}
 `;

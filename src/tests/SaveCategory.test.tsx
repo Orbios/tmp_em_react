@@ -1,5 +1,6 @@
 import {render, screen} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import {vi} from 'vitest';
 
 import SaveCategory from 'components/categories/components/SaveCategory';
 
@@ -12,7 +13,7 @@ test('renders save category modal and close on save button click', async () => {
   };
 
   const user = userEvent.setup();
-  const handleClose = jest.fn();
+  const handleClose = vi.fn();
 
   render(
     <SaveCategory category={category} visible save={() => null} onChange={(field, value) => null} close={handleClose} />

@@ -7,9 +7,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'toastr/build/toastr.css';
 import 'flatpickr/dist/flatpickr.min.css';
 
-import {routes} from './routes';
-import App from './components/App';
+import {routes} from 'routes';
 import {store} from 'store';
+
+import App from 'components/App';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
